@@ -11,17 +11,28 @@ const renderProps = ({ str, index, color }) => ({
 	key: `${str + index}-detail`,
 });
 
-const outline = ({ text, theme }) =>
-	text.split(' ').map((str, index) => (
-		<Span
-			initial={{ y: -50 }}
-			animate={{ y: 0 }}
-			transition={{ duration: 0.3 }}
-			key={str}
-			color={theme.headerColor[`color${index}`]}>
-			{str}
-		</Span>
-	));
+const outline = ({ text, theme, index }) => (
+	<>
+		<FirstLineNo>{index}</FirstLineNo>
+		{text.split(' ').map((str, index) => (
+			<Span
+				initial={{ y: -50 }}
+				animate={{ y: 0 }}
+				transition={{ duration: 0.3 }}
+				key={str}
+				color={theme.headerColor[`color${index}`]}>
+				{str}
+			</Span>
+		))}
+	</>
+);
+
+const emptyLine = (index) => (
+	<PageWrap key={index.toString()}>
+		<LineNo>{index}</LineNo>
+		<pre>{'\n'}</pre>
+	</PageWrap>
+);
 
 const Editor = (props) => {
 	const theme = useContext(ThemeContext);
@@ -30,14 +41,19 @@ const Editor = (props) => {
 	const content = props.data && props.data[tab];
 	const head = `import ${capitalizeWord} from '${capitalizeWord}';`;
 	const foot = `export default ${capitalizeWord};`;
-	const indexFactor = 2; // One for 0, other for header
+	const indexFactor = 3; // One for 0, other for header and for empty space
+	const contentLength = content.split('\n').length;
 
 	let count = 0,
 		color = '';
 
-	const header = outline({ text: head, theme });
+	const header = outline({ text: head, theme, index: 1 });
 
-	const footer = outline({ text: foot, theme });
+	const footer = outline({
+		text: foot,
+		theme,
+		index: contentLength + indexFactor + 1, // added one for empty line,
+	});
 
 	const detail = content.split('\n').map((str, index) => {
 		if (count >= 6) count = 0;
@@ -68,10 +84,10 @@ const Editor = (props) => {
 
 	return (
 		<Wrapper>
-			<FirstLineNo>1</FirstLineNo>
 			{header}
+			{emptyLine(2)}
 			{detail}
-			<FirstLineNo>{content.split('\n').length + indexFactor}</FirstLineNo>
+			{emptyLine(contentLength + indexFactor)}
 			{footer}
 		</Wrapper>
 	);

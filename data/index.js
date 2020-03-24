@@ -7,8 +7,8 @@ export const Resume = {
     Namaste: { 
         Name: 'Amit Mishra', 
         Designation: 'Senior Web Developer' 
-    } 
-}`,
+    }
+};`,
 
 	experience: `const Experience = () => {
     Media.net: {
@@ -31,8 +31,7 @@ export const Resume = {
         designation: 'Web Developer',
         period: 'July 2014 to September 2015'
     }
-}
-`,
+};`,
 
 	skills: `const Skills = () => {
     Markup: {
@@ -72,8 +71,7 @@ export const Resume = {
         gitlab: 'Gitlab',
         code: 'VS Code'
     }
-}
-`,
+};`,
 
 	projects: `const Projects = () => {
     zeta: {
@@ -89,8 +87,7 @@ export const Resume = {
     Onlinemocks: {
         url: <a target='_blank' href='http://onlinemocks.com/'>'http://onlinemocks.com/'</a>
     }
-}
-`,
+};`,
 
 	playground: `const Playground = () => {   
     Code Resume: {
@@ -112,16 +109,14 @@ export const Resume = {
     Mini Portfolio: {
         url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/pLELXZ'>'https://codepen.io/amitmishrg/pen/pLELXZ'</a>
     }
-}
-`,
+};`,
 
 	contact: `const Contact = () => {       
     {
         email: 'amitmishra009v@gmail.com',
         mobile: '8802100560'
     }
-}
-`,
+};`,
 };
 
 export const SocialLinks = {
