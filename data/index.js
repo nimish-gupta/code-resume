@@ -1,9 +1,9 @@
 export const defaultTheme = 'dark'; // light
 
-export const Title = 'Amit Mishra ~ Senior Web Developer';
+export const Title = 'Nimish Gupta ~ Programming Deliberately';
 
 export const Resume = {
-    introduction: `{ 
+	introduction: `{ 
         Introduction = () => { 
             Namaste: { 
                 Name: 'Amit Mishra', 
@@ -12,7 +12,7 @@ export const Resume = {
         } 
 }`,
 
-    experience: `{
+	experience: `{
         Experience = () => {
             Media.net: {
                 company: 'Directi(Media.net)',
@@ -37,7 +37,7 @@ export const Resume = {
         }
 }`,
 
-    skills: `{
+	skills: `{
         Skills = () => {
             Markup: {
                 html: 'Hyper Text Markup Language',
@@ -79,7 +79,7 @@ export const Resume = {
         }
 }`,
 
-    projects: `{
+	projects: `{
         Projects = () => {
             zeta: {
                 url: <a target='_blank' href='https://www.zeta.tech/zeta-spotlight/'>'https://www.zeta.tech/zeta-spotlight'</a>
@@ -97,7 +97,7 @@ export const Resume = {
         }
 }`,
 
-    playground: `{
+	playground: `{
         Playground = () => {   
             Code Resume: {
                 url: <a target='_blank' href='https://code-resume.herokuapp.com/'>'https://code-resume.herokuapp.com/'</a>,
@@ -121,20 +121,19 @@ export const Resume = {
         }
 }`,
 
-    contact: `{
+	contact: `{
         Contact = () => {       
             {
                 email: 'amitmishra009v@gmail.com',
                 mobile: '8802100560'
             }
         }
-}`
+}`,
 };
 
-
 export const SocialLinks = {
-    resume: '/resume.pdf',
-    linkedin: 'https://www.linkedin.com/in/amitmishrg/',
-    twitter: 'https://twitter.com/amitmishrg',
-    github: 'https://github.com/amitmishrg'
-}
+	resume: '/resume.pdf',
+	linkedin: 'https://www.linkedin.com/in/amitmishrg/',
+	twitter: 'https://twitter.com/amitmishrg',
+	github: 'https://github.com/amitmishrg',
+};
