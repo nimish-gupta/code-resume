@@ -30,6 +30,7 @@ const Editor = (props) => {
 	const content = props.data && props.data[tab];
 	const head = `import ${capitalizeWord} from '${capitalizeWord}';`;
 	const foot = `export default ${capitalizeWord};`;
+	const indexFactor = 2; // One for 0, other for header
 
 	let count = 0,
 		color = '';
@@ -59,7 +60,7 @@ const Editor = (props) => {
 
 		return (
 			<PageWrap key={index}>
-				<LineNo>{index + 2}</LineNo>
+				<LineNo>{index + indexFactor}</LineNo>
 				{renderPre}
 			</PageWrap>
 		);
@@ -70,7 +71,7 @@ const Editor = (props) => {
 			<FirstLineNo>1</FirstLineNo>
 			{header}
 			{detail}
-			<FirstLineNo>{content.split('\n').length + 2}</FirstLineNo>
+			<FirstLineNo>{content.split('\n').length + indexFactor}</FirstLineNo>
 			{footer}
 		</Wrapper>
 	);
