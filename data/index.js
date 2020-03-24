@@ -3,14 +3,14 @@ export const defaultTheme = 'dark'; // light
 export const Title = 'Nimish Gupta ~ Programming Deliberately';
 
 export const Resume = {
-	introduction: `const Introduction = () => { 
+	introduction: `const Introduction = () => ({ 
     Namaste: { 
         Name: 'Amit Mishra', 
         Designation: 'Senior Web Developer' 
     }
-};`,
+});`,
 
-	experience: `const Experience = () => {
+	experience: `const Experience = () => ({
     Media.net: {
         company: 'Directi(Media.net)',
         designation: 'Senior Web Developer',
@@ -31,9 +31,9 @@ export const Resume = {
         designation: 'Web Developer',
         period: 'July 2014 to September 2015'
     }
-};`,
+});`,
 
-	skills: `const Skills = () => {
+	skills: `const Skills = () => ({
     Markup: {
         html: 'Hyper Text Markup Language',
         version: 5
@@ -71,9 +71,9 @@ export const Resume = {
         gitlab: 'Gitlab',
         code: 'VS Code'
     }
-};`,
+});`,
 
-	projects: `const Projects = () => {
+	projects: `const Projects = () => ({
     zeta: {
         url: <a target='_blank' href='https://www.zeta.tech/zeta-spotlight/'>'https://www.zeta.tech/zeta-spotlight'</a>
     },
@@ -87,9 +87,9 @@ export const Resume = {
     Onlinemocks: {
         url: <a target='_blank' href='http://onlinemocks.com/'>'http://onlinemocks.com/'</a>
     }
-};`,
+});`,
 
-	playground: `const Playground = () => {   
+	playground: `const Playground = () => ({   
     Code Resume: {
         url: <a target='_blank' href='https://code-resume.herokuapp.com/'>'https://code-resume.herokuapp.com/'</a>,
         github: <a target='_blank' href='https://github.com/amitmishrg/code-resume'>'https://github.com/amitmishrg/code-resume'</a>
@@ -109,14 +109,14 @@ export const Resume = {
     Mini Portfolio: {
         url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/pLELXZ'>'https://codepen.io/amitmishrg/pen/pLELXZ'</a>
     }
-};`,
+});`,
 
-	contact: `const Contact = () => {       
+	contact: `const Contact = () => ({       
     {
         email: 'amitmishra009v@gmail.com',
         mobile: '8802100560'
     }
-};`,
+});`,
 };
 
 export const SocialLinks = {
