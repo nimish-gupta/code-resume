@@ -34,6 +34,22 @@ const emptyLine = (index) => (
 	</PageWrap>
 );
 
+const getRenderPre = ({ str, index, theme, props }) => {
+	if (str.includes('href=')) {
+		return <Pre {...props} dangerouslySetInnerHTML={{ __html: str }}></Pre>;
+	}
+
+	if (index === 0) {
+		return str.split(' ').map((s, pos) => (
+			<Span {...props} color={theme.headerColor[`color${pos}`]}>
+				{s}
+			</Span>
+		));
+	}
+
+	return <Pre {...props}>{str}</Pre>;
+};
+
 const Editor = (props) => {
 	const theme = useContext(ThemeContext);
 	const tab = props.path;
@@ -64,20 +80,15 @@ const Editor = (props) => {
 			color = theme.contentColor[`color${index}`];
 		}
 
-		let renderPre = <Pre {...renderProps({ str, index, color })}>{str}</Pre>;
-
-		if (str.includes('href=')) {
-			renderPre = (
-				<Pre
-					{...renderProps({ str, index, color })}
-					dangerouslySetInnerHTML={{ __html: str }}></Pre>
-			);
-		}
-
 		return (
 			<PageWrap key={index}>
 				<LineNo>{index + indexFactor}</LineNo>
-				{renderPre}
+				{getRenderPre({
+					str,
+					index,
+					theme,
+					props: renderProps({ str, index, color }),
+				})}
 			</PageWrap>
 		);
 	});
