@@ -1,59 +1,55 @@
-
 <p align="center">
-    <img src="http://code-resume.herokuapp.com/icons/icon.png" width="200">
+    <img src="https://nimish-gupta.github.io/code-resume/" width="200">
 </p>
-
-**🔥Build your own Resume in seconds.**
 
 # code-resume
 
-> Create your own offline-first resume by using code-resume.
-
 ## Demo
 
-https://code-resume.herokuapp.com/
+https://nimish-gupta.github.io/code-resume/
 
 ## Features
 
-* **Offline-first**
+- **Offline-first**
 
-* **Theme support Dark & Light mode**
+- **Theme support Dark & Light mode**
 
-* **Export PDF**
-  
-* **Easy Customization**
+- **Export PDF**
 
-* **Responsive for all devices**
+- **Easy Customization**
 
+- **Responsive for all devices**
 
-## Preview 
+## Preview
 
 **Iphone-**
+
 <p align="center">
-    <img aligh="left" src="http://code-resume.herokuapp.com/preview/iphone-dark.png" alt="iphone-dark"/>
-    <img aligh="right" src="http://code-resume.herokuapp.com/preview/iphone-light.png" alt="iphone-dark"/>
+    <img aligh="left" src="https://nimish-gupta.github.io/code-resume/preview/iphone-dark.png" alt="iphone-dark"/>
+    <img aligh="right" src="https://nimish-gupta.github.io/code-resume/preview/iphone-light.png" alt="iphone-dark"/>
 </p>
 
 **Ipad-**
+
 <p align="center">
-    <img src="http://code-resume.herokuapp.com/preview/ipad-dark.png" alt="ipad-dark"/>
+    <img src="https://nimish-gupta.github.io/code-resume/preview/ipad-dark.png" alt="ipad-dark"/>
 </p>
 <p align="center">
-    <img src="http://code-resume.herokuapp.com/preview/ipad-light.png" alt="ipad-light"/>
- </p>   
+    <img src="https://nimish-gupta.github.io/code-resume/preview/ipad-light.png" alt="ipad-light"/>
+ </p>
 
 **PWA-**
 
 <p align="center">
-    <img aligh="left" src="http://code-resume.herokuapp.com/preview/pwa-app.png" alt="pwa-preview"/>
+    <img aligh="left" src="https://nimish-gupta.github.io/code-resume/preview/pwa-app.png" alt="pwa-preview"/>
 </p>
- 
+
 
 ## Quick start
 
 **Clone This repo using:**
 
-<pre>git clone --depth=1 https://github.com/amitmishrg/code-resume.git <YOUR_PROJECT_NAME></pre>
+<pre>git clone --depth=1 https://github.com/nimish-gupta/code-resume.git <YOUR_PROJECT_NAME></pre>
 
 Move to the appropriate directory: cd <YOUR_PROJECT_NAME>.
 
@@ -80,8 +76,9 @@ Then open **index.js** & change details
 **Title**
 
 ```
-export const Title = 'Amit Mishra ~ Senior Web Developer';
+export const Title = 'Nimish Gupta ~ Portfolio';
 ```
+
 **Resume Details**
 
 ```
@@ -105,14 +102,10 @@ export const Resume = {
 
 ```
     resume: '/resume.pdf',
-    linkedin: 'https://www.linkedin.com/in/amitmishrg/',
-    twitter: 'https://twitter.com/amitmishrg',
-    github: 'https://github.com/amitmishrg'
+    twitter: 'https://twitter.com/nimishrocks2',
+    github: 'https://github.com/nimish-gupta'
 ```
-
 
 ## License
 
 This project is licensed under the [MIT](LICENSE) license.
-
-
