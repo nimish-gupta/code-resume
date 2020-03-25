@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Switch,
 	Route,
 	Redirect,
@@ -30,14 +30,14 @@ const App = (props) => {
 	const Data = props.data;
 	const keys = Object.keys(Data);
 	const routePaths = keys.map((path) => (
-		<Route path={`/${path}`} key={path}>
+		<Route exact path={`/${path}`} key={path}>
 			<Editor data={Data} path={path} />
 		</Route>
 	));
 
 	return (
 		<ThemeProvider theme={mode}>
-			<Router basename="code-resume/">
+			<Router>
 				<Suspense
 					fallback={
 						<LoadingChunks className="loading-chunks">Loading...</LoadingChunks>
