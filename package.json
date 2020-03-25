@@ -10,7 +10,7 @@
 		"start-dev": "webpack-dev-server --config ./webpack.config.dev",
 		"build": "webpack --config ./webpack.config.prod",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d build -u \"Nimish Gupta <nimishgupta18396@gmail.com>\""
 	},
 	"author": "",
 	"license": "ISC",
