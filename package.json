@@ -1,9 +1,9 @@
 {
-	"name": "code-resume",
+	"name": "nimish-portfolio",
 	"version": "1.0.0",
 	"description": "",
 	"private": true,
-	"homepage": "https://nimish-gupta.github.io/code-resume",
+	"homepage": "https://nimish-gupta.dev",
 	"scripts": {
 		"start": "npm run build && node start.js",
 		"server": "nodemon --inspect start.js",
