@@ -40,4 +40,4 @@ jobs: # a collection of steps
             git config user.email "nimishgupta18396@gmail.com"
             git config user.name "Nimish Gupta"
             git commit --allow-empty -m "Deployed From Circle CI on `date`"
-            git push -q https://${DEPLOY_KEY}@github.com:nimish-gupta/nimish-gupta.github.io.git master
+            git push -q https://${DEPLOY_KEY}@github.com/nimish-gupta/nimish-gupta.github.io.git master
