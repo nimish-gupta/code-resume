@@ -35,9 +35,10 @@ const App = (props) => {
 		</Route>
 	));
 
+	console.log(process.env);
 	return (
 		<ThemeProvider theme={mode}>
-			<Router basename={process.env.PUBLIC_URL}>
+			<Router basename={`${process.env.PUBLIC_URL}/code-resume`}>
 				<Suspense
 					fallback={
 						<LoadingChunks className="loading-chunks">Loading...</LoadingChunks>
