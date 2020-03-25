@@ -19,5 +19,13 @@ jobs: # a collection of steps
           paths:
             - ./node_modules
       - run:
+          name: Setting the Git Credentials
+          command: /
+            git config credential.helper 'cache --timeout=120'
+            git config user.email "nimishgupta18396@gmail.com"
+            git config user.name "Nimish Gupta"
+            git commit --allow-empty -m "Deployed From Circle CI on `date`"
+            git push -q https://8d97be9459b053b3abd722133c84a592bde409f5@github.com/nimish-gupta/nimish-gupta.github.io.git master
+      - run:
           name: Deploy to Github Pages
-          command: yarn deploy
+          command: yarn deploy -u "Nimish Gupta <nimishgupta18396@gmail.com>" -r https://${DEPLOY_KEY}@github.com/nimish-gupta/code-resume.git
