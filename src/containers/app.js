@@ -37,7 +37,7 @@ const App = (props) => {
 
 	return (
 		<ThemeProvider theme={mode}>
-			<Router>
+			<Router basename={`${process.env.PUBLIC_URL || ''}/`}>
 				<Suspense
 					fallback={
 						<LoadingChunks className="loading-chunks">Loading...</LoadingChunks>
