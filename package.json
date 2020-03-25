@@ -8,8 +8,9 @@
 		"start": "npm run build && node start.js",
 		"server": "nodemon --inspect start.js",
 		"start-dev": "webpack-dev-server --config ./webpack.config.dev",
-		"prebuild": "webpack --config ./webpack.config.prod",
-		"build": "gh-pages -d build"
+		"build": "webpack --config ./webpack.config.prod",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"author": "",
 	"license": "ISC",
