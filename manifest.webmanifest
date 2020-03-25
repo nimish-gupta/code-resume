@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.de91f9a05b6de315f5e5c3d64bbd8f67.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.b99c124039c13c3af9c20e97f34ec8fe.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.67d6083f5d6680b37dc99c1b183105ad.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.1500f8255da43e05ec0bb8ef241b4d53.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.94b9a4d8b180e30c2e501d80a54faa9c.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.90190beabc34d0249adaf203e7d5bfd3.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "CodeResume",
+  "short_name": "Resume",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "CodeResume || Portfolio!",
+  "theme_color": "#241b2f",
+  "background_color": "#262335"
+}
