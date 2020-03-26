@@ -7,7 +7,6 @@ import Github from 'Assets/svg/github.svg';
 import Pdf from 'Assets/svg/pdf.svg';
 import Resume from 'Assets/svg/resume.svg';
 import Moon from 'Assets/svg/moon.svg';
-import PdfFile from 'Data/resume.pdf';
 
 const ActivityBar = (props) => {
 	const { socialLinks, theme, setTheme } = props;
@@ -24,7 +23,9 @@ const ActivityBar = (props) => {
 					title="Resume"
 					variants={Item}
 					whileHover={{ scale: 1.2 }}
-					href={PdfFile}
+					href={
+						'https://github.com/nimish-gupta/code-resume/raw/master/data/resume.pdf'
+					}
 					target="_blank">
 					<Resume />
 				</Link>
