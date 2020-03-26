@@ -21,7 +21,6 @@ const ActivityBar = (props) => {
 		const mode = theme === 'dark' ? 'light' : 'dark';
 		setTheme(mode);
 	};
-	console.log(Object.entries(socialLinks));
 
 	return (
 		<Wrapper>
