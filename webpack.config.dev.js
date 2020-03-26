@@ -24,17 +24,6 @@ module.exports = {
 				use: 'eslint-loader',
 			},
 			{
-				test: /\.(png|jpg|gif|pdf)$/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[ext]',
-						},
-					},
-				],
-			},
-			{
 				test: /\.svg$/,
 				use: [
 					{
