@@ -1,3 +1,11 @@
+import React from 'react';
+import Twitter from 'Assets/svg/twitter.svg';
+import Linkedin from 'Assets/svg/linkedin.svg';
+import Github from 'Assets/svg/github.svg';
+import Goodreads from 'Assets/svg/goodreads.svg';
+import ResumeImg from 'Assets/svg/resume.svg';
+import Facebook from 'Assets/svg/facebook.svg';
+
 export const defaultTheme = 'dark'; // light
 
 export const Title = 'Nimish Gupta ~ Programming Deliberately';
@@ -120,8 +128,16 @@ export const Resume = {
 };
 
 export const SocialLinks = {
-	resume: '/resume.pdf',
-	linkedin: 'https://www.linkedin.com/in/amitmishrg/',
-	twitter: 'https://twitter.com/amitmishrg',
-	github: 'https://github.com/amitmishrg',
+	Resume: [
+		'https://github.com/nimish-gupta/code-resume/raw/master/data/resume.pdf',
+		() => <ResumeImg />,
+	],
+	Linkedin: ['https://www.linkedin.com/in/nimish-gupta/', () => <Linkedin />],
+	Twitter: ['https://twitter.com/nimishrocks2', () => <Twitter />],
+	Github: ['https://github.com/nimish-gupta', () => <Github />],
+	Facebook: ['https://www.facebook.com/Nimishrocks', () => <Facebook />],
+	Goodreads: [
+		'https://www.goodreads.com/user/show/64363737-nimish-gupta',
+		() => <Goodreads />,
+	],
 };
