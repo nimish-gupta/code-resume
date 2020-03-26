@@ -35,7 +35,7 @@ const emptyLine = (index) => (
 );
 
 const getRenderPre = ({ str, index, theme, props }) => {
-	if (str.includes('href=')) {
+	if (str.includes('<a') || str.includes('<ul')) {
 		return <Pre {...props} dangerouslySetInnerHTML={{ __html: str }}></Pre>;
 	}
 

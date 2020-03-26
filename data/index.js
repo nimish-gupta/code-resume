@@ -13,8 +13,8 @@ export const Title = 'Nimish Gupta ~ Programming Deliberately';
 export const Resume = {
 	introduction: `const Introduction = () => ({ 
     Namaste: { 
-        Name: 'Amit Mishra', 
-        Designation: 'Senior Web Developer' 
+        Name: 'Nimish Gupta', 
+        Designation: 'Software Engineer',
     }
 });`,
 
@@ -42,43 +42,21 @@ export const Resume = {
 });`,
 
 	skills: `const Skills = () => ({
-    Markup: {
-        html: 'Hyper Text Markup Language',
-        version: 5
-    },
-    Styling: {
-        css: 'Cascading Style Sheets',
-        sass: 'Syntactically Awesome Style Sheets',
-        postCss: 'PostCSS',
-        bootStrap: 'Bootstrap'
-    },
-    JavaScript: {
-        js: 'JavaScript',
-        react: 'React JS',
-        redux: 'Redux',
-        saga: 'Redux-Saga',
-        pwa: 'Progressive Web App',
-        node: 'Node JS'
-    },
-    BuildTools: {
-        webpack: 'Webpack',
-        gulp: 'Gulp'
-    },
-    Others: {
-        $: 'Jquery',
-        performance: 'Performance Optimization',
-        wd: 'Web Development',
-        rwd: 'Responsive Web Design',
-        validation: 'W3C Validation',
-        cbc: 'Cross-browser Compatibility',
-        vc: 'Version Control'
-    },
-    Tools: {
-        sketch: 'Sketch',
-        github: 'Github',
-        gitlab: 'Gitlab',
-        code: 'VS Code'
-    }
+    Language: ["Javascript", "Python", "PHP"],
+    Libraries & Frameworks: [
+        "Reasonml", "Node",
+        "React", "ReasonReact",
+        "Typescript", "Serverless",
+        "React native", "express"
+    ],
+    Databases: ["PostgreSQL", "MongoDB"],
+    Platform: ["Web", "IOS", "Android"],
+    "Cloud Applications": ["Heroku", "AWS", "ZIET", "Netlify"],
+    Tools: [
+        "Cypress", "CircleCi", "Git",
+        "Puppeteer", "Drip", "Segment"
+    ],
+
 });`,
 
 	projects: `const Projects = () => ({
@@ -96,26 +74,26 @@ export const Resume = {
         url: <a target='_blank' href='http://onlinemocks.com/'>'http://onlinemocks.com/'</a>
     }
 });`,
-
-	playground: `const Playground = () => ({   
-    Code Resume: {
-        url: <a target='_blank' href='https://code-resume.herokuapp.com/'>'https://code-resume.herokuapp.com/'</a>,
-        github: <a target='_blank' href='https://github.com/amitmishrg/code-resume'>'https://github.com/amitmishrg/code-resume'</a>
-    },    
-    offline News App: {
-        url: <a target='_blank' href='https://offline-news-app.herokuapp.com/'>'https://offline-news-app.herokuapp.com/'</a>,
-        github: <a target='_blank' href='https://github.com/amitmishrg/offline-news-app'>'https://github.com/amitmishrg/offline-news-app'</a>
+'open-source': `const Open-source = () => ({
+    React-Native: {
+        task: "To reduce the bundle size of the framework".
+        project-link: <a target='_blank' href='https://github.com/facebook/react-native'><u>"https://github.com/facebook/react-native"</u></a>,
+        contribution: "Click <a target='_blank' href='https://github.com/facebook/react-native/pulls?utf8=%E2%9C%93&q=+is%3Apr+author%3Animish-gupta+'><u>here</u></a> to view my contribution."
     },
-    CSS Animation: {
-        url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/vxoWVd'>'https://codepen.io/amitmishrg/pen/vxoWVd'</a>,
-        github: <a target='_blank' href='https://github.com/amitmishrg/CSS-Designs-and-Animation'>'https://github.com/amitmishrg/CSS-Designs-and-Animation'</a>
+    Sketch-sh: {
+        task: "To add the refresh link and pagination for posts."
+        project-link: "<a target='_blank' href='https://github.com/Sketch-sh/sketch-sh'><u>https://github.com/Sketch-sh/sketch-sh</u></a>",
+        contribution: "Click <a target='_blank' href='https://github.com/Sketch-sh/sketch-sh/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Animish-gupta+'><u>here</u></a> to view my contribution."
     },
-    Wrist Watch: {
-        url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/evqeQp'>'https://codepen.io/amitmishrg/pen/evqeQp'</a>,
-        github: <a target='_blank' href='https://github.com/amitmishrg/wrist-watch'>'https://github.com/amitmishrg/wrist-watch'</a>
+    Apollo-Graphql: {
+        task: "To correct the documentation for Hapi server configuration."
+        project-link: "<a target='_blank' href='https://github.com/apollographql/apollo-server'><u>https://github.com/apollographql/apollo-server</u></a>",
+        contribution: "Click <a target='_blank' href='https://github.com/apollographql/apollo-server/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Animish-gupta+'><u>here</u></a> to view my contribution."
     },
-    Mini Portfolio: {
-        url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/pLELXZ'>'https://codepen.io/amitmishrg/pen/pLELXZ'</a>
+    Expedition: {
+        task: "To create account's screen and quest filter."
+        project-link: "<a target='_blank' href='https://github.com/ExpeditionRPG/expedition'><u>https://github.com/ExpeditionRPG/expedition</u></a>",
+        contribution: "Click <a target='_blank' href='https://github.com/ExpeditionRPG/expedition/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Animish-gupta+'><u>here</u></a> to view my contribution."
     }
 });`,
 
@@ -141,3 +119,5 @@ export const SocialLinks = {
 		() => <Goodreads />,
 	],
 };
+
+
