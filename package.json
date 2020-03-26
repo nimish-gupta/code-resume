@@ -9,7 +9,6 @@
 		"server": "nodemon --inspect start.js",
 		"start-dev": "webpack-dev-server --config ./webpack.config.dev",
 		"build": "webpack --config ./webpack.config.prod",
-		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
 	"author": "",

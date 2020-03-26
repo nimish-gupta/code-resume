@@ -19,5 +19,11 @@ jobs: # a collection of steps
           paths:
             - ./node_modules
       - run:
+          name: Build the static site
+          command: yarn build
+      - run:
+          name: Create a CNAME record # this is used to prevent the reset of custom domain
+          command: echo "nimish-gupta.dev" > build/CNAME
+      - run:
           name: Deploy to Github Pages
           command: yarn deploy -u "Nimish Gupta <nimishgupta18396@gmail.com>" -r https://${DEPLOY_KEY}@github.com/nimish-gupta/code-resume.git
