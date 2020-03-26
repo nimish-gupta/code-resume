@@ -26,12 +26,15 @@ module.exports = {
 				use: 'eslint-loader',
 			},
 			{
-				test: /\.(png|jpg|gif|pdf)$/,
+				test: /\.svg$/,
 				use: [
 					{
-						loader: 'file-loader',
+						loader: 'babel-loader',
+					},
+					{
+						loader: 'react-svg-loader',
 						options: {
-							name: '[name].[ext]',
+							jsx: true, // true outputs JSX tags
 						},
 					},
 				],
