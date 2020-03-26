@@ -44,7 +44,6 @@ https://nimish-gupta.github.io/code-resume/
     <img aligh="left" src="https://nimish-gupta.github.io/code-resume/preview/pwa-app.png" alt="pwa-preview"/>
 </p>
 
-
 ## Quick start
 
 **Clone This repo using:**
@@ -59,7 +58,7 @@ Move to the appropriate directory: cd <YOUR_PROJECT_NAME>.
 
 **Run:**
 
-<pre>yarn start-dev</pre>
+<pre>yarn start</pre>
 
 **Build:**
 
