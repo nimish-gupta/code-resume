@@ -3,58 +3,70 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	mode: "development",
-	entry: "./src/index.js",
+	mode: 'development',
+	entry: './src/index.js',
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'build'),
-		publicPath: '/'
+		publicPath: '/',
 	},
-	devtool: "inline-source-map",
+	devtool: 'inline-source-map',
 	module: {
 		rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				use: "babel-loader"
+				use: 'babel-loader',
 			},
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				use: "eslint-loader"
+				use: 'eslint-loader',
+			},
+			{
+				test: /\.(png|jpg|gif|pdf)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+						},
+					},
+				],
 			},
 			{
 				test: /\.svg$/,
 				use: [
 					{
-						loader: "babel-loader"
+						loader: 'babel-loader',
 					},
 					{
-						loader: "react-svg-loader",
+						loader: 'react-svg-loader',
 						options: {
-							jsx: true // true outputs JSX tags
-						}
-					}
-				]
-			}
-		]
+							jsx: true, // true outputs JSX tags
+						},
+					},
+				],
+			},
+		],
 	},
 	devServer: {
-    	historyApiFallback: true,
-  	},
+		historyApiFallback: true,
+	},
 	resolve: {
 		alias: {
 			Cmpts: path.resolve(__dirname, 'src/components/'),
 			Styles: path.resolve(__dirname, 'src/styles/'),
-			Assets: path.resolve(__dirname, 'assets/')
-		}
+			Assets: path.resolve(__dirname, 'assets/'),
+			Data: path.resolve(__dirname, 'data/'),
+		},
 	},
 	optimization: {},
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: path.resolve(__dirname, 'build/index.html'),
-			template: path.resolve(__dirname, 'src/index.html')
+			template: path.resolve(__dirname, 'src/index.html'),
 		}),
-		new webpack.HotModuleReplacementPlugin()
-	]
-}
+		new webpack.HotModuleReplacementPlugin(),
+	],
+};

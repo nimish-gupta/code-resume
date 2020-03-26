@@ -26,6 +26,17 @@ module.exports = {
 				use: 'eslint-loader',
 			},
 			{
+				test: /\.(png|jpg|gif|pdf)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+						},
+					},
+				],
+			},
+			{
 				test: /\.svg$/,
 				use: [
 					{
@@ -46,6 +57,7 @@ module.exports = {
 			Cmpts: path.resolve(__dirname, 'src/components/'),
 			Styles: path.resolve(__dirname, 'src/styles/'),
 			Assets: path.resolve(__dirname, 'assets/'),
+			Data: path.resolve(__dirname, 'data/'),
 		},
 	},
 	optimization: {
