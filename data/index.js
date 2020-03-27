@@ -58,16 +58,19 @@ export const Resume = {
     Libraries & Frameworks: [
         "Reasonml", "Node",
         "React", "ReasonReact",
+        "React native", "express",
         "Typescript", "Serverless",
-        "React native", "express"
     ],
     Databases: ["PostgreSQL", "MongoDB"],
-    Platform: ["Web", "IOS", "Android"],
     "Cloud Applications": ["Heroku", "AWS", "ZIET", "Netlify"],
     Tools: [
-        "Cypress", "CircleCi", "Git",
-        "Puppeteer", "Drip", "Segment"
+        "Cypress", "CircleCi", "Git","Puppeteer", "Segment"
     ],
+    Platform: ["Web", "IOS", "Android"],
+    "Services": [
+        "Stripe", "Razorpay", "Transferwise",
+        "Salesforce", "Retool", "Airtable", "Metabase"
+    ]
 
 });`,
 	'open-source': `const Open-source = () => ({
@@ -94,8 +97,9 @@ export const Resume = {
 });`,
 
 	contact: `const Contact = () => ({       
-    email: '<a target='_blank' href='mailto:nimishgupta18396@gmail.com'><u>nimishgupta18396@gmail.com</u></a> ',
-    mobile: '(+91)7417843488'
+    mailto: '<a target='_blank' href='mailto:nimishgupta18396@gmail.com'><u>nimishgupta18396@gmail.com</u></a> ',
+    mobile: '(+91)7417843488',
+    form: 'Click <a target='_blank' href='https://airtable.com/shrVnaGfw86A3Qs8W'><u>here</u></a> to reach out to me.'
 });`,
 };
 
