@@ -2,7 +2,7 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 
 const fontFamily = 'Monaco, Menlo, Inconsolata, "Courier New", monospace';
 
-export const GlobalStyle =  createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 14px;
@@ -20,7 +20,7 @@ export const GlobalStyle =  createGlobalStyle`
     }
   }
   body {
-    background: ${props => props.theme.body};
+    background: ${(props) => props.theme.body};
     padding: 0;
     margin: 0;
     font-family: ${fontFamily};
@@ -41,39 +41,46 @@ export const GlobalStyle =  createGlobalStyle`
     padding: 0;
     list-style: none;
   }
+  .dot {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block
+  }
 `;
 
 export const SideBarWrapper = styled.div`
-  display: inline-flex;
-  width: 227px;
-  height: calc(100vh - 20px);
-  @media (max-width: 768px) {
-      width: auto;
-  }
-  @media (max-width: 480px) {
-    height: calc(100vh - 12px);
-  }
-`
+	display: inline-flex;
+	width: 227px;
+	height: calc(100vh - 20px);
+	@media (max-width: 768px) {
+		width: auto;
+	}
+	@media (max-width: 480px) {
+		height: calc(100vh - 12px);
+	}
+`;
 export const Container = styled.div`
-  display: flex;
-`
+	display: flex;
+`;
 export const ContentWrap = styled.div`
-  width: calc(100% - 227px);
-  background: ${props => props.theme.editorBg};
-  @media (max-width: 768px) {
-      width: calc(100% - 50px);
-  }
-  @media (max-width: 480px) {
-      width: calc(100% - 30px);
-  }
-  `
+	width: calc(100% - 227px);
+	background: ${(props) => props.theme.editorBg};
+	@media (max-width: 768px) {
+		width: calc(100% - 50px);
+	}
+	@media (max-width: 480px) {
+		width: calc(100% - 30px);
+	}
+`;
 
-  export const LoadingChunks = styled.div`
-    text-align: center;
-    color: ${props => props.theme.textColor};
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  `
+export const LoadingChunks = styled.div`
+	text-align: center;
+	color: ${(props) => props.theme.textColor};
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+`;
