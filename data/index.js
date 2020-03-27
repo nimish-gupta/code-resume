@@ -15,6 +15,18 @@ export const Resume = {
     Namaste: { 
         Name: 'Nimish Gupta', 
         Designation: 'Software Engineer',
+        Summary: {
+            <span class="dot"></span> : "Pragmatic Programmer trying to learn <u>Programming Deliberately</u>.",
+            <span class="dot"></span> : "Believe in the power of programming to improve and transform the lives of the people.",
+            <span class="dot"></span> : "Self driven and likes to demonstrate ownership and leadership.",
+            <span class="dot"></span> : "Data driven and an insightful engineer who is passionate about growing teams and business.",
+        },
+        Highlights: {
+            <span class="dot"></span> : "4+ years of experience in all phases of <u>Software Development</u> life cycle",
+            <span class="dot"></span> : "Helped in building <u>a career accelerator for top engineering talent</u> to break into international tech career.",
+            <span class="dot"></span> : "Created software that can operate and perform operations on 100+ sites at same time.",
+            <span class="dot"></span> : "Experienced software engineer driven by <u>full-stack projects</u> and creating solutions for business needs.",
+        }
     }
 });`,
 
@@ -58,23 +70,7 @@ export const Resume = {
     ],
 
 });`,
-
-	projects: `const Projects = () => ({
-    zeta: {
-        url: <a target='_blank' href='https://www.zeta.tech/zeta-spotlight/'>'https://www.zeta.tech/zeta-spotlight'</a>
-    },
-    Collegedunia: {
-        url: <a target='_blank' href='https://collegedunia.com/'>'https://collegedunia.com/'</a>
-    },
-    lib4dev: {
-        url: <a target='_blank' href='http://www.lib4dev.in/'>'http://www.lib4dev.in/'</a>,
-        github: <a target='_blank' href='https://github.com/amitmishrg/lib4dev'>'https://github.com/amitmishrg/lib4dev'</a>
-    },
-    Onlinemocks: {
-        url: <a target='_blank' href='http://onlinemocks.com/'>'http://onlinemocks.com/'</a>
-    }
-});`,
-'open-source': `const Open-source = () => ({
+	'open-source': `const Open-source = () => ({
     React-Native: {
         task: "To reduce the bundle size of the framework".
         project-link: <a target='_blank' href='https://github.com/facebook/react-native'><u>"https://github.com/facebook/react-native"</u></a>,
@@ -98,10 +94,8 @@ export const Resume = {
 });`,
 
 	contact: `const Contact = () => ({       
-    {
-        email: 'amitmishra009v@gmail.com',
-        mobile: '8802100560'
-    }
+    email: '<a target='_blank' href='mailto:nimishgupta18396@gmail.com'><u>nimishgupta18396@gmail.com</u></a> ',
+    mobile: '(+91)7417843488'
 });`,
 };
 
@@ -119,5 +113,3 @@ export const SocialLinks = {
 		() => <Goodreads />,
 	],
 };
-
-
