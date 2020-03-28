@@ -20,8 +20,6 @@
 		"express": "^4.17.1",
 		"gh-pages": "^2.2.0",
 		"nodemon": "^2.0.2",
-		"pdf-merger-js": "^3.0.1",
-		"puppeteer": "^2.1.1",
 		"react": "latest",
 		"react-dom": "latest",
 		"react-router-dom": "^5.1.2",
