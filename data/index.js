@@ -19,12 +19,13 @@ export const Resume = {
             <span class="dot"></span> : "Pragmatic Programmer trying to learn <u>Programming Deliberately</u>.",
             <span class="dot"></span> : "Believe in the power of programming to improve and transform the lives of the people.",
             <span class="dot"></span> : "Data driven and an insightful engineer who likes to demonstrate ownership and leadership.",
+            <span class="dot"></span> : "Experienced software engineer driven by <u>full-stack projects</u> and creating solutions for business needs.",
         },
         Highlights: {
             <span class="dot"></span> : "4+ years of experience in all phases of <u>Software Development</u> life cycle",
             <span class="dot"></span> : "Helped in building <u>a career accelerator for top engineering talent</u> to break into international tech career.",
             <span class="dot"></span> : "Created software that can operate and perform operations on 100+ sites at same time.",
-            <span class="dot"></span> : "Experienced software engineer driven by <u>full-stack projects</u> and creating solutions for business needs.",
+            <span class="dot"></span> : "Moved all the paper work to an online portal for multiple UPTU colleges.",
         }
     }
 });`,
