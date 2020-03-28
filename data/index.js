@@ -100,7 +100,7 @@ export const Resume = {
     mailto: '<a target='_blank' href='mailto:nimishgupta18396@gmail.com'><u>nimishgupta18396@gmail.com</u></a> ',
     mobile: '(+91)7417843488',
     form: 'Click <a target='_blank' href='https://airtable.com/shrVnaGfw86A3Qs8W'><u>here</u></a> to reach out to me.'
-    'qr-code': Click <a href='https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=MECARD:N:Gupta,Nimish;New Delhi - India;TEL:7417843488;EMAIL:nimishgupta18396@gmail.com;URL:https://nimish-gupta.dev;NOTE:Pragmatic Programmer;;'> <u>here</u></a> to save my contact info.
+    'contact-card': Click <a target='_blank' href='https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=MECARD:N:Gupta,Nimish;New Delhi - India;TEL:7417843488;EMAIL:nimishgupta18396@gmail.com;URL:https://nimish-gupta.dev;NOTE:Pragmatic Programmer;;'> <u>here</u></a> to scan my contact card.
 });`,
 };
 
