@@ -18,8 +18,7 @@ export const Resume = {
         Summary: {
             <span class="dot"></span> : "Pragmatic Programmer trying to learn <u>Programming Deliberately</u>.",
             <span class="dot"></span> : "Believe in the power of programming to improve and transform the lives of the people.",
-            <span class="dot"></span> : "Self driven and likes to demonstrate ownership and leadership.",
-            <span class="dot"></span> : "Data driven and an insightful engineer who is passionate about growing teams and business.",
+            <span class="dot"></span> : "Data driven and an insightful engineer who likes to demonstrate ownership and leadership.",
         },
         Highlights: {
             <span class="dot"></span> : "4+ years of experience in all phases of <u>Software Development</u> life cycle",
@@ -30,28 +29,30 @@ export const Resume = {
     }
 });`,
 
-	experience: `const Experience = () => ({
-    Media.net: {
-        company: 'Directi(Media.net)',
-        designation: 'Senior Web Developer',
-        period: 'Feb 2017 to Present'
-    },
-    Onlinemocks: {
-        company: 'Onlinemocks Pvt. Ltd.',
-        designation: 'UI Developer',
-        period: 'May 2016 to January 2017'
-    },
-    Collegedunia: {
-        company: 'Collegedunia Web Pvt. Ltd.',
-        designation: 'UI Developer',
-        period: 'October 2015 to April 2016'
-    },
-    Rising Hues: {
-        company: 'Rising Hues Technology LLP.',
-        designation: 'Web Developer',
-        period: 'July 2014 to September 2015'
-    }
-});`,
+	// 					experience: `const Experience = () => ({
+	//     'Software Engineer Lead (Pesto Tech - March 2018 to April 2020)': {
+	//         <span class="dot"></span> : "4+ years of experience in all phases of <u>Software Development</u> life cycle",
+	//         <span class="dot"></span> : "Helped in building <u>a career accelerator for top engineering talent</u> to break into international tech career.",
+	//         <span class="dot"></span> : "Created software that can operate and perform operations on 100+ sites at same time.",
+	//         <span class="dot"></span> : "Experienced software engineer driven by <u>full-stack projects</u> and creating solutions for business needs.",
+	//     },
+	//     'Software Engineer (Pesto Tech - April 2017 to March 2018)': {
+	//         <span class="dot"></span> : "Successfully launched ios/android apps which have more than ",
+	//         <span class="dot"></span> : "Build a software which helped client in making more than $50k in revenue.",
+	//         <span class="dot"></span> : "Created software that can operate and perform operations on 100+ sites at same time.",
+	//         <span class="dot"></span> : "Setup fastlane for the delivery of app to test-flight and app store..",
+	//     },
+	//     'Backend Engineer (Smarter.codes - June 2016 - April 2017)': {
+	//         <span class="dot"></span> : "Used Python for scrapping similar keywords from google, quora and bing against a word.",
+	//         <span class="dot"></span> : "Crawl we",
+	//         <span class="dot"></span> : "Used elastic search for storing the results of the keywords.",
+	//     },
+	//     'Team Lead (KIET)': {
+	//         company: 'Rising Hues Technology LLP.',
+	//         designation: 'Web Developer',
+	//         period: 'July 2014 to September 2015'
+	//     }
+	// });`,
 
 	skills: `const Skills = () => ({
     Language: ["Javascript", "Python", "PHP"],
