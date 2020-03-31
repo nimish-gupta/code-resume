@@ -3,5 +3,5 @@ export const getEnvUrl = () => {
 		return `http://localhost:8000/`;
 	}
 
-	return 'https://blog.nimish-gupta.dev/';
+	return 'https://nimish-gupta.dev/';
 };
